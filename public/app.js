@@ -9,13 +9,14 @@ const getCryptoInfo = async (key) => {
   const crypto = await response.json();
   return crypto;
 };
-// const updateCryptoInfo = () => {}
+
+const updateCryptoInfo = () => {};
 for (let i = 0; i < cryptoKeys.length; i++) {
   getCryptoInfo(cryptoKeys[i]).then((data) => {
     console.log(cryptoKeys[i]);
     let { base, price, change } = data.ticker;
     let html = `
-                <td scope="row"><img>${base}</td>
+                <td scope="row"><img class="crypto--img" src="images/logo/${base.toLowerCase()}.png"></img>${base}</td>
                 <td>$${price}</td>
                 <td>${change}%</td>
             `;
