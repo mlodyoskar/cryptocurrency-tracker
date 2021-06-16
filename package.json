@@ -1,0 +1,22 @@
+{
+  "name": "crypto-tracker",
+  "version": "1.0.0",
+  "description": "Cryptocurrency tracker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlodyoskar/cryptocurrency-tracker.git"
+  },
+  "author": "Oskar Puchalski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlodyoskar/cryptocurrency-tracker/issues"
+  },
+  "homepage": "https://github.com/mlodyoskar/cryptocurrency-tracker#readme",
+  "dependencies": {
+    "cryptocurrency-icons": "^0.17.2"
+  }
+}

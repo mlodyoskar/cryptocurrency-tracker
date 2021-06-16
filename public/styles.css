@@ -1,9 +1,43 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
+  color: white;
+}
+body {
+  background: #212529;
+  color: white;
+}
+.container--header {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 36px;
+}
+.container--getmore {
+  text-align: center !important;
+  color: white;
+}
+.table--name {
+  width: 400px;
+}
+
+.table--th {
+  border-bottom: none;
+}
+
+.table--td {
+  border-top: 1px solid #40424e;
+  border-bottom: 1px solid #40424e;
 }
 .crypto--img {
-  width: 40px;
-  height: 40px;
+  margin-right: 1em;
+  width: 24px;
+  height: 24px;
+}
+
+.table--row {
+}
+
+.table--row:hover {
+  background-color: #202c38;
+}
+
+@media (min-width: 600px) {
 }
