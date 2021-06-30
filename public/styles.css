@@ -1,5 +1,5 @@
 * {
-  color: white;
+  color: #e4e4e4;
 }
 body {
   background: #212529;
@@ -26,13 +26,16 @@ body {
   border-top: 1px solid #40424e;
   border-bottom: 1px solid #40424e;
 }
+.table--change__green {
+  color: green;
+}
+.table--change__red {
+  color: red;
+}
 .crypto--img {
   margin-right: 1em;
   width: 24px;
   height: 24px;
-}
-
-.table--row {
 }
 
 .table--row:hover {

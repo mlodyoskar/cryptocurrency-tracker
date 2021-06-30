@@ -20,7 +20,7 @@
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">CryptoTracker</a>
+        <a class="navbar-brand" href="./index.html">CryptoTracker</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -35,10 +35,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link active" href="./about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -47,31 +49,10 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <h1 class="display-1 container--header">Top currencies</h1>
-      <table class="table">
-        <thead>
-          <tr>
-            <th class="table--th" scope="col">Name</th>
-            <th class="table--th" scope="col">Price</th>
-            <th class="table--th" scope="col">Change</th>
-          </tr>
-        </thead>
-        <tbody id="table--body"></tbody>
-      </table>
-      <div class="container--getmore">
-        <a href="">Get all cryptocurrencies</a>
-      </div>
-    </div>
-    <footer class="bg-dark text-center text-white footer">
+    <div class="container"></div>
+    <footer class="bg-dark text-center text-white">
       <div class="container p-4 pb-0">
         <section class="mb-4">
-          <a
-            class="btn btn-floating m-1"
-            href="https://github.com/mlodyoskar"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
           <a
             class="btn btn-floating m-1"
             href="https://twitter.com/puchalskioskar"
@@ -84,6 +65,12 @@
             role="button"
             ><i class="fab fa-instagram"></i
           ></a>
+          <a
+            class="btn btn-floating m-1"
+            href="https://github.com/mlodyoskar"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
         </section>
       </div>
     </footer>
@@ -92,7 +79,5 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
-    <!-- <script src="tests.js"></script> -->
   </body>
 </html>

@@ -23,6 +23,28 @@ const getCrypto = async (key) => {
   return await response.json();
 };
 
+const renderCrypto = async (crypto) => {
+  cryptos.forEach((c) => {
+    let { base, price, change } = c;
+    let colorClass = "";
+    if (change[0] === "-") {
+      colorClass = "table--change__red";
+    } else {
+      colorClass = "table--change__green";
+    }
+    let logoSrc = `http:\\node_modules/cryptocurrency-icons/32/color/${base.toLowerCase()}.png`;
+    let html = `
+                <td class="table--td table--name" scope="row"><img class="crypto--img" src=${logoSrc} ></img>${base}</td>
+                <td class="table--td table--price">$${price.slice(0, 12)}</td>
+                <td class="table--td ${colorClass}">${change}%</td>
+            `;
+    tr = document.createElement("tr");
+    tr.classList.add("table--row");
+    tr.innerHTML = html;
+    tableBody.appendChild(tr);
+  });
+};
+
 const storeCrypto = async () => {
   promises = [];
   cryptos = [];
@@ -36,24 +58,8 @@ const storeCrypto = async () => {
     cryptos.sort((a, b) => {
       return b.price - a.price;
     });
-  });
-  return cryptos;
-};
-
-const renderCrypto = async () => {
-  storeCrypto().then((data) => {
-    console.log(data);
-    let logoSrc = `http:\\node_modules/cryptocurrency-icons/32/color/${base.toLowerCase()}.png`;
-    let html = `
-                <td class="table--td table--name" scope="row"><img class="crypto--img" src=${logoSrc} ></img>${base}</td>
-                <td class="table--td table--price">$${price.slice(0, 12)}</td>
-                <td class="table--td table--change">${change}%</td>
-            `;
-    tr = document.createElement("tr");
-    tr.classList.add("table--row");
-    tr.innerHTML = html;
-    tableBody.appendChild(tr);
+    renderCrypto(cryptos);
   });
 };
 
-renderCrypto();
+storeCrypto();
