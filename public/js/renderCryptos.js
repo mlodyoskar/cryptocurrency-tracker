@@ -32,7 +32,7 @@ const renderCrypto = async (crypto) => {
     } else {
       colorClass = "table--change__green";
     }
-    let logoSrc = `http:\\node_modules/cryptocurrency-icons/32/color/${base.toLowerCase()}.png`;
+    let logoSrc = `node_modules/cryptocurrency-icons/32/color/${base.toLowerCase()}.png`;
     let html = `
                 <td class="table--td table--name" scope="row"><img class="crypto--img" src=${logoSrc} ></img>${base}</td>
                 <td class="table--td table--price">$${price.slice(0, 12)}</td>

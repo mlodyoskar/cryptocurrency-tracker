@@ -1,0 +1,20 @@
+<%- include ("partials/head") %>
+<%- include ("partials/nav") %>
+<div class="container">
+  <h1 class="display-1 container--header">Top currencies</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="table--th" scope="col">Name</th>
+        <th class="table--th" scope="col">Price</th>
+        <th class="table--th" scope="col">Change</th>
+      </tr>
+    </thead>
+    <tbody id="table--body"></tbody>
+  </table>
+  <div class="container--getmore">
+    <a href="">Get all cryptocurrencies</a>
+  </div>
+</div>
+<script src="/public/js/renderCryptos.js"></script>
+<%- include ("partials/footer") %>

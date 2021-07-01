@@ -14,17 +14,18 @@ body {
   text-align: center !important;
   color: white;
 }
-.table--name {
-  width: 400px;
+.table{
+  table-layout: fixed;
 }
 
 .table--th {
   border-bottom: none;
 }
-
-.table--td {
+.table--row {
   border-top: 1px solid #40424e;
   border-bottom: 1px solid #40424e;
+}
+.table--td {
 }
 .table--change__green {
   color: green;
@@ -36,10 +37,6 @@ body {
   margin-right: 1em;
   width: 24px;
   height: 24px;
-}
-
-.table--row:hover {
-  background-color: #202c38;
 }
 
 @media (min-width: 600px) {
