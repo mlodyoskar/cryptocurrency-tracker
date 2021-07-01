@@ -4,22 +4,25 @@ const app = express();
 const port = 3000;
 
 app.set("view engine", "ejs");
-app.use('/public', express.static('public'))
-app.use('/node_modules', express.static('node_modules'))
+app.use("/public", express.static("public"));
+app.use("/node_modules", express.static("node_modules"));
 
 app.get("/", (req, res) => {
   const title = "Home";
-  res.render("index", {title});
+  const page_name = "home";
+  res.render("index", { title, page_name });
 });
 
 app.get("/about", (req, res) => {
   const title = "About";
-  res.render("about", {title});
+  const page_name = "about";
+  res.render("about", { title, page_name });
 });
 
 app.get("/contact", (req, res) => {
   const title = "Contact";
-  res.render("contact", {title});
+  const page_name = "contact";
+  res.render("contact", { title, page_name });
 });
 
 app.listen(port, () => {

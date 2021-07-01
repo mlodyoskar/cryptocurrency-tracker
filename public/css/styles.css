@@ -5,6 +5,9 @@ body {
   background: #212529;
   color: white;
 }
+.navbar--logo {
+  height: 80px;
+}
 .container--header {
   text-align: center;
   margin: 1em 0;
@@ -14,8 +17,9 @@ body {
   text-align: center !important;
   color: white;
 }
-.table{
+.table {
   table-layout: fixed;
+  margin-top: 2em;
 }
 
 .table--th {
