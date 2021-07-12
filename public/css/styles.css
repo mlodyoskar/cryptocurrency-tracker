@@ -42,6 +42,12 @@ body {
   width: 24px;
   height: 24px;
 }
+.contact--img {
+  width: 60%;
+  margin: auto;
+}
+
+
 
 @media (min-width: 600px) {
 }

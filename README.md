@@ -1,7 +1,18 @@
-# Cryptocurrency-tracker
+# Overview 📈
 
-Cryptocurrency-tracker is a web app to track current prices of cryptocurrencies, using API.
+Cryptocurrency-tracker is a web app to track current prices of cryptocurrencies. It uses external API to fetch data.
 
-## License
+## Technologies 🔧
 
-[MIT](https://choosealicense.com/licenses/mit/)
+- ejs
+- express
+- cypress
+
+## Installation 💾
+
+```
+git clone https://github.com/mlodyoskar/cryptocurrency-tracker.git
+cd cryptocurrency-tracker
+npm install
+node app.js
+```
