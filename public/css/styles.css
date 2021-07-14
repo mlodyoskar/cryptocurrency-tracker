@@ -8,6 +8,7 @@ body {
 .navbar--logo {
   height: 80px;
 }
+
 .container--header {
   text-align: center;
   margin: 1em 0;
@@ -46,8 +47,21 @@ body {
   width: 60%;
   margin: auto;
 }
-
-
+.footer--social {
+  background-color: #40424e;
+  box-shadow: 3px 3px #1d1d1e;
+}
+.form-control {
+  background-color: #40424e !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 3px 3px #1d1d1e;
+}
+.btn-primary {
+  background-color: #40424e !important;
+  border: none;
+  box-shadow: 3px 3px #1d1d1e;
+}
 
 @media (min-width: 600px) {
 }
